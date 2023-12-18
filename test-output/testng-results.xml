@@ -1,64 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-15T07:51:02 GMT" name="Default suite" finished-at="2023-12-15T07:51:12 GMT" duration-ms="10179">
+  <suite started-at="2023-12-18T08:08:53 GMT" name="Default suite" finished-at="2023-12-18T08:08:56 GMT" duration-ms="2650">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RerunRunner@1b1426f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CRMRunner@1b1426f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-12-15T07:51:02 GMT" name="Default test" finished-at="2023-12-15T07:51:12 GMT" duration-ms="10179">
-      <class name="runners.RerunRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.RerunRunner@1b1426f4]" started-at="2023-12-15T07:51:02 GMT" name="setUpClass" finished-at="2023-12-15T07:51:03 GMT" duration-ms="879" status="PASS">
+    <test started-at="2023-12-18T08:08:53 GMT" name="Default test" finished-at="2023-12-18T08:08:56 GMT" duration-ms="2650">
+      <class name="runners.CRMRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CRMRunner@1b1426f4]" started-at="2023-12-18T08:08:53 GMT" name="setUpClass" finished-at="2023-12-18T08:08:54 GMT" duration-ms="900" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@78e17a99]]>
+                <![CDATA[org.testng.TestRunner@289fdb08]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RerunRunner@1b1426f4]" started-at="2023-12-15T07:51:03 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-15T07:51:11 GMT" duration-ms="7807" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CRMRunner@1b1426f4]" started-at="2023-12-18T08:08:54 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-18T08:08:54 GMT" duration-ms="141" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search Selenium Tutorial"]]>
+                <![CDATA["Create a new Tasks"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Google Page Search Function"]]>
+                <![CDATA["Tasks CRUD Management"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Selenium Tutorial - Google Search page] but found [Selenium Tutorial - Google Search]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Selenium Tutorial - Google Search page] but found [Selenium Tutorial - Google Search]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at stepDefs.GoooglePageStepDefs.should_display_selenium_result_page(GoooglePageStepDefs.java:45)
-at ✽.Should display Selenium Result Page(file:///C:/Users/Administrator/git/BDDSamples/src/test/resources/Features/GoogleSearch.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.RerunRunner@1b1426f4]" started-at="2023-12-15T07:51:11 GMT" name="tearDownClass" finished-at="2023-12-15T07:51:12 GMT" duration-ms="1452" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CRMRunner@1b1426f4]" started-at="2023-12-18T08:08:54 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-18T08:08:54 GMT" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View Tasks"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tasks CRUD Management"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CRMRunner@1b1426f4]" started-at="2023-12-18T08:08:54 GMT" name="tearDownClass" finished-at="2023-12-18T08:08:56 GMT" duration-ms="1535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.RerunRunner -->
+      </class> <!-- runners.CRMRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

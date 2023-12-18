@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 		//dryRun = false
 		monochrome = true,
 		plugin = {"pretty" ,
-				"html:target//Report//HtmlReport.html",
+//				"html:target//Report//HtmlReport.html",
 //				"json:target//Report//JSONReport.json",
 //				"usage:target//Report//UsageReport",
 //				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",

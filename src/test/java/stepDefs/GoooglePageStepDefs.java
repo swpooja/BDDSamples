@@ -42,7 +42,7 @@ public class GoooglePageStepDefs {
 	}
 	@Then("Should display Selenium Result Page")
 	public void should_display_selenium_result_page() {
-		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search page");
+		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");
 	}
 	@After
 	public void attachedScreenshot(Scenario scenario) {
