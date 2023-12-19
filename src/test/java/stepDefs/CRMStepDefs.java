@@ -24,16 +24,50 @@ public class CRMStepDefs {
 //		System.out.println("Close DB....");
 //	}
 	
-	@Before("@SmokeTest")
+//	@Before("@SmokeTest")
+//	public static void initChrome() {
+//		System.out.println("Init chrome....");
+//	}
+//	
+//	@Before("@RegressionTest")
+//	public static void initEdge() {
+//		System.out.println("Init Edge....");
+//	}
+//	@Before(order = 2)
+//	public static void initDB() {
+//		System.out.println("Init DB....");
+//	}
+//	
+//	@Before(order = 1)
+//	public static void readProperty() {
+//		System.out.println("Read Property....");
+//	}
+//	
+//	@Before(order = 3)
+//	public static void initBrowser() {
+//		System.out.println("Init Browser....");
+//	}
+	
+	@Before(value ="@SmokeTest", order =1)
 	public static void initChrome() {
 		System.out.println("Init chrome....");
 	}
 	
-	@Before("@RegressionTest")
+	@Before(value ="@SmokeTest", order =2)
+	public static void readSmokeTestProperty() {
+		System.out.println("Read smoke test Property....");
+	}
+	
+	@Before(value = "@RegressionTest", order =1)
 	public static void initEdge() {
 		System.out.println("Init Edge....");
 	}
+	@Before(value = "@RegressionTest", order =2)
+	public static void readRegTestProperty() {
+		System.out.println("Read reg test Property....");
+	}
 	
+		
 	@Given("User is logged in")
 	public void user_is_logged_in() {
 	    System.out.println("User is logged in");
